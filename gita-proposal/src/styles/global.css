@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@theme {
+  --color-saffron-50: #fff8e1;
+  --color-saffron-100: #ffecb3;
+  --color-saffron-200: #ffe082;
+  --color-saffron-300: #ffd54f;
+  --color-saffron-400: #ffca28;
+  --color-saffron-500: #ffc107;
+  --color-saffron-600: #ffb300;
+  --color-saffron-700: #ffa000;
+  --color-saffron-800: #ff8f00;
+  --color-saffron-900: #ff6f00;
+  
+  --color-gold-100: #fff9c4;
+  --color-gold-200: #fff59d;
+  --color-gold-300: #fff176;
+  --color-gold-400: #ffee58;
+  --color-gold-500: #ffeb3b;
+  --color-gold-600: #fdd835;
+  --color-gold-700: #fbc02d;
+  --color-gold-800: #f9a825;
+  --color-gold-900: #f57f17;
+  
+  --font-cinzel: 'Cinzel', serif;
+  --font-lato: 'Lato', sans-serif;
+}
+
+@layer base {
+    :root {
+        --color-saffron: #FF8C00; /* Deep Orange */
+        --color-gold: #FFD700;    /* Gold */
+        --color-cream: #FFFDD0;   /* Cream */
+        --color-devotional-orange: #FF4500; /* OrangeRed */
+        --color-dark-orange: #CC3300; /* Darker Orange for contrast */
+        --color-light-cream: #FFF8DC; /* Lighter cream */
+        
+        --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
+        --shadow-gold: 0 4px 15px rgba(255, 215, 0, 0.3);
+        --gradient-gold: linear-gradient(135deg, #FFD700 0%, #FDB931 100%);
+        --gradient-saffron: linear-gradient(135deg, #FF8C00 0%, #FF4500 100%);
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        font-family: 'Lato', sans-serif;
+        background-color: var(--color-light-cream);
+        color: #333;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ff9800' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    
+    h1, h2, h3, h4, h5, h6, .devotional-title {
+        font-family: 'Cinzel', serif;
+        color: var(--color-dark-orange);
+    }
+}
+
+@layer components {
+    .spiritual-card {
+        @apply bg-white rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border border-orange-100 relative overflow-hidden;
+    }
+    
+    .spiritual-card::before {
+        content: '';
+        @apply absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 to-orange-500 opacity-0 transition-opacity duration-300;
+    }
+    
+    .spiritual-card:hover::before {
+        @apply opacity-100;
+    }
+
+    .text-shadow-lg {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .text-shadow-sm {
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .gold-border {
+        border: 1px solid rgba(255, 215, 0, 0.5);
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
+    }
+    
+    .glass-card {
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    
+    .om-symbol {
+        font-family: 'Noto Sans Devanagari', sans-serif;
+    }
+    
+    .btn-primary {
+        @apply px-8 py-3 rounded-full font-semibold text-lg transition-all shadow-lg hover:shadow-xl transform hover:scale-105 relative overflow-hidden;
+        background: var(--gradient-saffron);
+        color: white;
+    }
+    
+    .btn-secondary {
+        @apply px-8 py-3 rounded-full font-semibold text-lg transition-all shadow-lg hover:shadow-xl transform hover:scale-105 relative overflow-hidden text-orange-900;
+        background: var(--gradient-gold);
+    }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}

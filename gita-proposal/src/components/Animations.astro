@@ -1,0 +1,61 @@
+---
+// Client-side animations component
+---
+
+<script>
+	import { animate, inView } from '@motionone/dom';
+
+	// Wait for DOM to be ready
+	document.addEventListener('DOMContentLoaded', () => {
+		// Animate cards on scroll - faster animations with minimal delay
+		document.querySelectorAll('.spiritual-card').forEach((card, index) => {
+			// Set initial state - visible but slightly offset
+			card.style.opacity = '1';
+			card.style.transform = 'translateY(0)';
+			
+			inView(card, () => {
+				animate(card, {
+					opacity: [0.7, 1],
+					transform: ['translateY(20px)', 'translateY(0)']
+				}, {
+					duration: 0.4,
+					delay: index * 0.03,
+					easing: 'ease-out'
+				});
+			}, { amount: 0.2 });
+		});
+
+		// Animate package cards - faster with minimal delay
+		document.querySelectorAll('.package-card').forEach((card, index) => {
+			// Set initial state - visible
+			card.style.opacity = '1';
+			card.style.transform = 'scale(1)';
+			
+			inView(card, () => {
+				animate(card, {
+					opacity: [0.8, 1],
+					transform: ['scale(0.95)', 'scale(1)']
+				}, {
+					duration: 0.3,
+					delay: index * 0.02,
+					easing: 'ease-out'
+				});
+			}, { amount: 0.2 });
+		});
+
+		// Smooth scroll for anchor links
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+				const target = document.querySelector(this.getAttribute('href'));
+				if (target) {
+					target.scrollIntoView({
+						behavior: 'smooth',
+						block: 'start'
+					});
+				}
+			});
+		});
+	});
+</script>
+

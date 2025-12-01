@@ -1,0 +1,591 @@
+---
+import '../styles/global.css';
+import Animations from '../components/Animations.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Join ISKCON Noida's Bhagavad-Gītā Seva: Distributing divine wisdom to transform lives through sacred knowledge and spiritual upliftment" />
+		<title>Bhagavad-Gītā Seva | ISKCON Noida</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Lato:wght@300;400;700&family=Noto+Sans+Devanagari&display=swap" rel="stylesheet">
+	</head>
+	<body class="antialiased">
+		<!-- No Publishing Policy Notice (Disabled) -->
+		<div class="bg-red-50 border-b-2 border-red-500 p-3 text-center fixed top-0 w-full z-50 shadow-md" style="display: none;">
+			<p class="text-red-800 font-bold text-sm">
+				⚠️ STRICT NO PUBLISHING POLICY: This document contains copyrighted images for internal ISKCON Noida use only. 
+				DO NOT publish, share, or distribute publicly. For internal use only.
+			</p>
+		</div>
+
+		<!-- Hero Section -->
+		<section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden mt-12">
+			<!-- Parallax Background -->
+			<div class="absolute inset-0 z-0">
+				<img 
+					src="/krishna-arjun-kurukshetra-war-o92nc507nc3hahdm.jpg" 
+					alt="Krishna and Arjuna" 
+					class="w-full h-full object-cover opacity-30 scale-105 animate-pulse-slow"
+				/>
+				<div class="absolute inset-0 bg-gradient-to-b from-orange-50/80 via-orange-100/50 to-white"></div>
+			</div>
+
+			<!-- Content -->
+			<div class="relative z-20 text-center px-4 max-w-5xl mx-auto">
+				<!-- Logos and Gita Cover -->
+				<div class="flex justify-center items-center gap-8 mb-10 flex-wrap">
+					<div class="relative group">
+						<div class="absolute inset-0 bg-yellow-400 rounded-full blur opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
+						<img 
+							src="/prabhupada.webp" 
+							alt="Srila Prabhupada" 
+							class="h-28 w-28 object-contain rounded-full border-4 border-yellow-500 shadow-lg relative z-10 transform group-hover:scale-105 transition-transform duration-500"
+						/>
+					</div>
+					<div class="relative group">
+						<div class="absolute inset-0 bg-orange-400 rounded-lg blur opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
+						<img 
+							src="/bg_aii_cover.webp" 
+							alt="Bhagavad-Gītā As It Is" 
+							class="h-44 w-auto object-contain rounded-lg shadow-2xl border-2 border-yellow-500 relative z-10 transform group-hover:rotate-3 transition-transform duration-500"
+						/>
+					</div>
+					<div class="relative group">
+						<div class="absolute inset-0 bg-white rounded-full blur opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
+						<img 
+							src="/iskcon_noida_logo.jpg" 
+							alt="ISKCON Noida" 
+							class="h-28 object-contain relative z-10 transform group-hover:scale-105 transition-transform duration-500"
+						/>
+					</div>
+				</div>
+
+				<!-- ISKCON Full Form -->
+				<div class="mb-8">
+					<p class="text-lg sm:text-xl text-orange-800 font-bold tracking-wide uppercase">
+						International Society for Krishna Consciousness
+					</p>
+					<p class="text-sm sm:text-base text-orange-700 italic mt-1 font-serif">
+						Founder-Ācārya: H.D.G. A.C. Bhaktivedanta Swami Śrīla Prabhupāda
+					</p>
+				</div>
+
+				<h1 class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black mb-6 devotional-title text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-red-700 drop-shadow-sm">
+					<span class="block leading-tight">Bhagavad-Gītā</span>
+					<span class="block text-yellow-600 text-5xl sm:text-6xl md:text-7xl mt-2 font-serif italic">Seva</span>
+				</h1>
+				
+				<div class="w-48 h-1 bg-gradient-to-r from-transparent via-orange-500 to-transparent mx-auto mb-8"></div>
+				
+				<p class="text-2xl sm:text-3xl md:text-4xl text-orange-900 mb-6 font-serif italic font-semibold">
+					Donation & Value Education Seva
+				</p>
+				
+				<p class="text-xl text-gray-700 mb-10 max-w-3xl mx-auto font-medium leading-relaxed">
+					Disseminating Divine Wisdom, Inspiring Transformation, and Bestowing Eternal Blessings
+				</p>
+
+				<div class="flex gap-6 justify-center flex-wrap">
+					<a href="#packages" class="btn-primary">
+						View Packages
+					</a>
+					<a href="#contact" class="btn-secondary">
+						Contact Us
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Purpose Section -->
+		<section id="purpose" class="py-24 px-4 relative">
+			<div class="max-w-6xl mx-auto">
+				<div class="text-center mb-16">
+					<h2 class="text-5xl md:text-6xl font-bold text-orange-800 mb-6 devotional-title">
+						Project Purpose
+					</h2>
+					<div class="flex justify-center items-center gap-4">
+						<div class="h-px w-20 bg-orange-300"></div>
+						<div class="text-2xl text-orange-500">❖</div>
+						<div class="h-px w-20 bg-orange-300"></div>
+					</div>
+				</div>
+
+				<div class="spiritual-card p-10 md:p-16 mb-16 bg-gradient-to-br from-white to-orange-50 border-none shadow-xl relative">
+					<div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500"></div>
+					<p class="text-2xl sm:text-3xl text-center text-gray-800 leading-relaxed mb-10 font-serif font-medium">
+						Our sacred mission is to distribute <span class="font-bold text-orange-700">Bhagavad-Gītā As It Is</span> 
+						(in both Hindi and English editions) to students, workers, families, youth, and underprivileged communities across the nation.
+					</p>
+					<p class="text-lg sm:text-xl text-center text-gray-600 italic">
+						Through this divine seva, we propagate spiritual knowledge, cultivate positivity, and bestow eternal blessings upon all recipients.
+					</p>
+				</div>
+
+				<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+					<div class="spiritual-card p-8 text-center hover:-translate-y-2 transition-transform duration-300">
+						<div class="text-6xl mb-6 bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto text-orange-600">🌱</div>
+						<h3 class="text-xl font-bold text-orange-800 mb-3">Sowing Bhakti</h3>
+						<p class="text-gray-600 leading-relaxed">Planting the sacred seeds of bhakti in every heart</p>
+					</div>
+					<div class="spiritual-card p-8 text-center hover:-translate-y-2 transition-transform duration-300">
+						<div class="text-6xl mb-6 bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto text-orange-600">🎯</div>
+						<h3 class="text-xl font-bold text-orange-800 mb-3">Guiding Youth</h3>
+						<p class="text-gray-600 leading-relaxed">Empowering youth to embrace the path of dharma</p>
+					</div>
+					<div class="spiritual-card p-8 text-center hover:-translate-y-2 transition-transform duration-300">
+						<div class="text-6xl mb-6 bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto text-orange-600">💡</div>
+						<h3 class="text-xl font-bold text-orange-800 mb-3">Divine Light</h3>
+						<p class="text-gray-600 leading-relaxed">Bringing divine light to underserved communities</p>
+					</div>
+					<div class="spiritual-card p-8 text-center hover:-translate-y-2 transition-transform duration-300">
+						<div class="text-6xl mb-6 bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto text-orange-600">🙏</div>
+						<h3 class="text-xl font-bold text-orange-800 mb-3">Upliftment</h3>
+						<p class="text-gray-600 leading-relaxed">Elevating workers, inmates, and villagers through knowledge</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Quote Section -->
+		<section class="py-20 bg-orange-900 text-white text-center relative overflow-hidden">
+			<div class="absolute inset-0 opacity-10 bg-[url('/iskcon_noida_logo.jpg')] bg-repeat space opacity-5"></div>
+			<div class="max-w-4xl mx-auto px-4 relative z-10">
+				<div class="text-6xl text-yellow-500 mb-6 font-serif">"</div>
+				<p class="text-3xl md:text-4xl font-serif italic mb-8 leading-relaxed text-yellow-100">
+					Every Gītā transforms a heart,<br/>every heart transforms a life.
+				</p>
+				<div class="w-24 h-1 bg-yellow-500 mx-auto mb-8"></div>
+				<p class="text-2xl font-serif text-yellow-200">
+					Every donation brings joy to Śrīla Prabhupāda's lotus feet.
+				</p>
+			</div>
+		</section>
+
+		<!-- Packages Section -->
+		<section id="packages" class="py-24 px-4 bg-gradient-to-b from-orange-50 to-white relative">
+			<div class="max-w-7xl mx-auto">
+				<div class="text-center mb-20">
+					<h2 class="text-5xl md:text-6xl font-bold text-orange-800 mb-6 devotional-title">
+						Donation Packages
+					</h2>
+					<div class="flex justify-center items-center gap-4 mb-8">
+						<div class="h-px w-20 bg-orange-300"></div>
+						<div class="text-2xl text-orange-500">❖</div>
+						<div class="h-px w-20 bg-orange-300"></div>
+					</div>
+					<p class="text-xl text-gray-600 max-w-3xl mx-auto font-serif italic">
+						Select a package that resonates with your heart and create an enduring spiritual legacy
+					</p>
+				</div>
+
+				<!-- Package A: Sponsor Gitas -->
+				<div class="mb-24">
+					<div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-orange-100">
+						<div class="bg-gradient-to-r from-orange-600 to-red-600 p-8 text-white text-center">
+							<h3 class="text-4xl font-bold devotional-title">A. Sponsor Gītās</h3>
+						</div>
+						
+						<div class="p-8 md:p-12">
+							<div class="mb-12 flex justify-center">
+								<div class="relative">
+									<div class="absolute -inset-4 bg-yellow-200 rounded-full blur-xl opacity-50"></div>
+									<img 
+										src="/bg_aii_cover.webp" 
+										alt="Bhagavad-Gītā As It Is" 
+										class="relative w-64 h-auto rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300"
+									/>
+								</div>
+							</div>
+							
+							<div class="grid lg:grid-cols-2 gap-16">
+								<!-- Hindi Packages -->
+								<div>
+									<h4 class="text-2xl font-bold text-orange-800 mb-8 text-center border-b-2 border-orange-100 pb-4">
+										Hindi Gītā <span class="text-lg font-normal text-gray-600 ml-2">(₹210 each)</span>
+									</h4>
+									<div class="grid sm:grid-cols-2 gap-6">
+										<div class="spiritual-card p-6 text-center group">
+											<div class="text-5xl font-bold text-orange-600 mb-2 group-hover:scale-110 transition-transform">10</div>
+											<p class="text-gray-500 text-sm uppercase tracking-wider mb-4">Gītās</p>
+											<p class="text-3xl font-bold text-gray-800">₹2,100</p>
+										</div>
+										<div class="spiritual-card p-6 text-center bg-orange-50 border-orange-200 group">
+											<div class="absolute top-0 right-0 bg-orange-500 text-white text-xs px-2 py-1 rounded-bl-lg">Popular</div>
+											<div class="text-5xl font-bold text-orange-600 mb-2 group-hover:scale-110 transition-transform">51</div>
+											<p class="text-gray-500 text-sm uppercase tracking-wider mb-4">Gītās</p>
+											<p class="text-3xl font-bold text-gray-800">₹10,710</p>
+										</div>
+										<div class="spiritual-card p-6 text-center group">
+											<div class="text-5xl font-bold text-orange-600 mb-2 group-hover:scale-110 transition-transform">108</div>
+											<p class="text-gray-500 text-sm uppercase tracking-wider mb-4">Gītās</p>
+											<p class="text-3xl font-bold text-gray-800">₹22,680</p>
+										</div>
+										<div class="spiritual-card p-6 text-center group">
+											<div class="text-5xl font-bold text-orange-600 mb-2 group-hover:scale-110 transition-transform">200</div>
+											<p class="text-gray-500 text-sm uppercase tracking-wider mb-4">Gītās</p>
+											<p class="text-3xl font-bold text-gray-800">₹42,000</p>
+										</div>
+										<div class="spiritual-card p-6 text-center group col-span-full sm:col-span-1">
+											<div class="text-5xl font-bold text-orange-600 mb-2 group-hover:scale-110 transition-transform">500</div>
+											<p class="text-gray-500 text-sm uppercase tracking-wider mb-4">Gītās</p>
+											<p class="text-3xl font-bold text-gray-800">₹1,05,000</p>
+										</div>
+										<div class="spiritual-card p-6 text-center group bg-orange-900 text-white sm:col-span-1 border-none">
+											<div class="text-5xl font-bold text-yellow-400 mb-2 group-hover:scale-110 transition-transform">1000</div>
+											<p class="text-orange-200 text-sm uppercase tracking-wider mb-4">Gītās</p>
+											<p class="text-3xl font-bold text-white">₹2,10,000</p>
+										</div>
+									</div>
+								</div>
+								
+								<!-- English Packages -->
+								<div>
+									<h4 class="text-2xl font-bold text-orange-800 mb-8 text-center border-b-2 border-orange-100 pb-4">
+										English Gītā <span class="text-lg font-normal text-gray-600 ml-2">(₹270 each)</span>
+									</h4>
+									<div class="grid sm:grid-cols-2 gap-6">
+										<div class="spiritual-card p-6 text-center group">
+											<div class="text-5xl font-bold text-orange-600 mb-2 group-hover:scale-110 transition-transform">10</div>
+											<p class="text-gray-500 text-sm uppercase tracking-wider mb-4">Gītās</p>
+											<p class="text-3xl font-bold text-gray-800">₹2,700</p>
+										</div>
+										<div class="spiritual-card p-6 text-center bg-orange-50 border-orange-200 group">
+											<div class="text-5xl font-bold text-orange-600 mb-2 group-hover:scale-110 transition-transform">51</div>
+											<p class="text-gray-500 text-sm uppercase tracking-wider mb-4">Gītās</p>
+											<p class="text-3xl font-bold text-gray-800">₹13,770</p>
+										</div>
+										<div class="spiritual-card p-6 text-center group">
+											<div class="text-5xl font-bold text-orange-600 mb-2 group-hover:scale-110 transition-transform">108</div>
+											<p class="text-gray-500 text-sm uppercase tracking-wider mb-4">Gītās</p>
+											<p class="text-3xl font-bold text-gray-800">₹29,160</p>
+										</div>
+										<div class="spiritual-card p-6 text-center group">
+											<div class="text-5xl font-bold text-orange-600 mb-2 group-hover:scale-110 transition-transform">200</div>
+											<p class="text-gray-500 text-sm uppercase tracking-wider mb-4">Gītās</p>
+											<p class="text-3xl font-bold text-gray-800">₹54,000</p>
+										</div>
+										<div class="spiritual-card p-6 text-center group col-span-full sm:col-span-1">
+											<div class="text-5xl font-bold text-orange-600 mb-2 group-hover:scale-110 transition-transform">500</div>
+											<p class="text-gray-500 text-sm uppercase tracking-wider mb-4">Gītās</p>
+											<p class="text-3xl font-bold text-gray-800">₹1,35,000</p>
+										</div>
+										<div class="spiritual-card p-6 text-center group bg-orange-900 text-white sm:col-span-1 border-none">
+											<div class="text-5xl font-bold text-yellow-400 mb-2 group-hover:scale-110 transition-transform">1000</div>
+											<p class="text-orange-200 text-sm uppercase tracking-wider mb-4">Gītās</p>
+											<p class="text-3xl font-bold text-white">₹2,70,000</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Package B: Adopt a School -->
+				<div class="mb-24 relative">
+					<div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-orange-100">
+						<div class="grid md:grid-cols-2">
+							<div class="relative h-96 md:h-auto">
+								<img 
+									src="/program-images/school-actual-iskcon.jpg" 
+									alt="School Gita Distribution" 
+									class="absolute inset-0 w-full h-full object-cover"
+								/>
+								<div class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent md:bg-gradient-to-t"></div>
+								<div class="absolute bottom-0 left-0 p-8 text-white">
+									<h3 class="text-4xl font-bold devotional-title mb-2">B. Adopt a School</h3>
+									<p class="text-yellow-200 font-medium">Shaping the future generation</p>
+								</div>
+							</div>
+							<div class="p-10 md:p-12 flex flex-col justify-center">
+								<p class="text-gray-600 mb-10 text-lg leading-relaxed">
+									Recognizing that most government schools prefer Hindi editions, our packages are thoughtfully designed at ₹210 per student.
+								</p>
+								
+								<div class="space-y-6">
+									<div class="flex items-center justify-between p-4 bg-orange-50 rounded-xl border border-orange-100">
+										<div>
+											<span class="block text-2xl font-bold text-orange-800">150 Students</span>
+										</div>
+										<span class="text-2xl font-bold text-orange-600">₹31,500</span>
+									</div>
+									<div class="flex items-center justify-between p-4 bg-white rounded-xl border border-orange-200 shadow-sm">
+										<div>
+											<span class="block text-2xl font-bold text-orange-800">300 Students</span>
+										</div>
+										<span class="text-2xl font-bold text-orange-600">₹63,000</span>
+									</div>
+									<div class="flex items-center justify-between p-4 bg-orange-900 text-white rounded-xl shadow-lg">
+										<div>
+											<span class="block text-2xl font-bold text-yellow-400">500 Students</span>
+										</div>
+										<span class="text-2xl font-bold">₹1,05,000</span>
+									</div>
+								</div>
+
+								<div class="mt-10">
+									<h4 class="text-lg font-bold text-orange-800 mb-4">Package Includes:</h4>
+									<ul class="space-y-3 text-gray-600">
+										<li class="flex items-center gap-3">
+											<span class="text-green-500 text-xl">✓</span>
+											<span>Interactive value education session</span>
+										</li>
+										<li class="flex items-center gap-3">
+											<span class="text-green-500 text-xl">✓</span>
+											<span>Sacred Gītā distribution ceremony</span>
+										</li>
+										<li class="flex items-center gap-3">
+											<span class="text-green-500 text-xl">✓</span>
+											<span>Inspirational posters and commemorative bookmarks</span>
+										</li>
+										<li class="flex items-center gap-3">
+											<span class="text-green-500 text-xl">✓</span>
+											<span>Personalized donor acknowledgement</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Package C: Adopt a Factory -->
+				<div class="mb-24">
+					<div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-orange-100">
+						<div class="grid md:grid-cols-2 direction-rtl"> <!-- Reverse order on desktop -->
+							<div class="p-10 md:p-12 flex flex-col justify-center order-2 md:order-1">
+								<h3 class="text-4xl font-bold devotional-title text-orange-800 mb-2">C. Adopt a Workplace</h3>
+								<p class="text-orange-600 font-medium mb-8">Uplifting the workforce</p>
+								
+								<p class="text-gray-600 mb-10 text-lg leading-relaxed">
+									Workers derive profound spiritual benefit from Hindi editions. English versions are available upon request.
+								</p>
+								
+								<div class="space-y-6">
+									<div class="flex items-center justify-between p-4 bg-orange-50 rounded-xl border border-orange-100">
+										<div>
+											<span class="block text-2xl font-bold text-orange-800">100 Workers</span>
+											<span class="text-sm text-gray-500">Hindi Edition</span>
+										</div>
+										<span class="text-2xl font-bold text-orange-600">₹21,000</span>
+									</div>
+									<div class="flex items-center justify-between p-4 bg-white rounded-xl border border-orange-200 shadow-sm">
+										<div>
+											<span class="block text-2xl font-bold text-orange-800">500 Workers</span>
+											<span class="text-sm text-gray-500">Hindi Edition</span>
+										</div>
+										<span class="text-2xl font-bold text-orange-600">₹1,05,000</span>
+									</div>
+									<div class="flex items-center justify-between p-4 bg-orange-900 text-white rounded-xl shadow-lg">
+										<div>
+											<span class="block text-2xl font-bold text-yellow-400">1000 Workers</span>
+											<span class="text-sm text-orange-200">Hindi Edition</span>
+										</div>
+										<span class="text-2xl font-bold">₹2,10,000</span>
+									</div>
+								</div>
+							</div>
+							<div class="relative h-96 md:h-auto order-1 md:order-2">
+								<img 
+									src="/program-images/workplace-actual-iskcon.jpg" 
+									alt="Workplace Gita Distribution" 
+									class="absolute inset-0 w-full h-full object-cover"
+								/>
+								<div class="absolute inset-0 bg-gradient-to-l from-black/60 to-transparent md:bg-gradient-to-t"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Package D: Jails, Slums & Villages -->
+				<div class="mb-24">
+					<div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-orange-100">
+						<div class="grid md:grid-cols-2">
+							<div class="relative h-96 md:h-auto">
+								<img 
+									src="/program-images/community-actual-iskcon.jpg" 
+									alt="Community Gita Distribution" 
+									class="absolute inset-0 w-full h-full object-cover"
+								/>
+								<div class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent md:bg-gradient-to-t"></div>
+								<div class="absolute bottom-0 left-0 p-8 text-white">
+									<h3 class="text-4xl font-bold devotional-title mb-2">D. Jails, Slums & Villages</h3>
+									<p class="text-yellow-200 font-medium italic">Most profound spiritual impact</p>
+								</div>
+							</div>
+							<div class="p-10 md:p-12 flex flex-col justify-center">
+								<p class="text-gray-600 mb-10 text-lg leading-relaxed">
+									These distributions yield the most profound spiritual impact, reaching those who need hope and guidance the most.
+								</p>
+								
+								<div class="space-y-6">
+									<div class="flex items-center justify-between p-4 bg-orange-50 rounded-xl border border-orange-100">
+										<div>
+											<span class="block text-2xl font-bold text-orange-800">200 People</span>
+											<span class="text-sm text-gray-500">Hindi Edition</span>
+										</div>
+										<span class="text-2xl font-bold text-orange-600">₹42,000</span>
+									</div>
+									<div class="flex items-center justify-between p-4 bg-white rounded-xl border border-orange-200 shadow-sm">
+										<div>
+											<span class="block text-2xl font-bold text-orange-800">500 People</span>
+											<span class="text-sm text-gray-500">Hindi Edition</span>
+										</div>
+										<span class="text-2xl font-bold text-orange-600">₹1,05,000</span>
+									</div>
+									<div class="flex items-center justify-between p-4 bg-orange-900 text-white rounded-xl shadow-lg">
+										<div>
+											<span class="block text-2xl font-bold text-yellow-400">1000 People</span>
+											<span class="text-sm text-orange-200">Hindi Edition</span>
+										</div>
+										<span class="text-2xl font-bold">₹2,10,000</span>
+									</div>
+								</div>
+								
+								<div class="mt-8 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
+									<div class="flex gap-4">
+										<img 
+											src="/program-images/tribal-care-actual.jpg" 
+											alt="Tribal Care" 
+											class="w-24 h-24 object-cover rounded-lg shadow-md"
+										/>
+										<div>
+											<h5 class="font-bold text-orange-800 mb-1">Tribal Care Initiative</h5>
+											<p class="text-sm text-gray-600">Supporting indigenous communities with spiritual education and basic needs alongside book distribution.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Donor Benefits Section -->
+		<section id="benefits" class="py-24 px-4 bg-orange-900 text-white relative overflow-hidden">
+			<div class="absolute inset-0 bg-[url('/krishna-arjun-kurukshetra-war-o92nc507nc3hahdm.jpg')] bg-cover bg-fixed opacity-10 mix-blend-overlay"></div>
+			<div class="max-w-6xl mx-auto relative z-10">
+				<div class="text-center mb-20">
+					<h2 class="text-5xl md:text-6xl font-bold mb-6 devotional-title text-yellow-400">What Donors Receive</h2>
+					<div class="flex justify-center items-center gap-4">
+						<div class="h-px w-20 bg-orange-500"></div>
+						<div class="text-2xl text-yellow-500">❖</div>
+						<div class="h-px w-20 bg-orange-500"></div>
+					</div>
+				</div>
+
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300">
+						<div class="text-5xl mb-6">📸</div>
+						<h3 class="text-2xl font-bold mb-4 text-yellow-300">Photos & Videos</h3>
+						<p class="text-orange-100 leading-relaxed">Comprehensive photographic and video documentation of the distribution ceremony.</p>
+					</div>
+					<div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300">
+						<div class="text-5xl mb-6">📊</div>
+						<h3 class="text-2xl font-bold mb-4 text-yellow-300">Distribution Report</h3>
+						<p class="text-orange-100 leading-relaxed">Detailed report of seva activities, including locations and recipient demographics.</p>
+					</div>
+					<div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300">
+						<div class="text-5xl mb-6">📍</div>
+						<h3 class="text-2xl font-bold mb-4 text-yellow-300">Location Choice</h3>
+						<p class="text-orange-100 leading-relaxed">Choose your preferred distribution venue: schools, correctional facilities, or communities.</p>
+					</div>
+					<div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300">
+						<div class="text-5xl mb-6">🙏</div>
+						<h3 class="text-2xl font-bold mb-4 text-yellow-300">Divine Blessings</h3>
+						<p class="text-orange-100 leading-relaxed">Receive heartfelt blessings from hundreds of grateful families and individuals.</p>
+					</div>
+					<div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300">
+						<div class="text-5xl mb-6">✨</div>
+						<h3 class="text-2xl font-bold mb-4 text-yellow-300">Spiritual Merit</h3>
+						<p class="text-orange-100 leading-relaxed">Accrue immeasurable spiritual sukṛti through this sacred act of knowledge charity.</p>
+					</div>
+					<div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300">
+						<div class="text-5xl mb-6">🏷️</div>
+						<h3 class="text-2xl font-bold mb-4 text-yellow-300">Personalized Stickers</h3>
+						<p class="text-orange-100 leading-relaxed">Each book features a custom sticker: "Gifted with love by [Your Family Name]".</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section id="contact" class="py-24 px-4 bg-white">
+			<div class="max-w-4xl mx-auto text-center">
+				<h2 class="text-5xl md:text-6xl font-bold text-orange-800 mb-6 devotional-title">Contact Us</h2>
+				<div class="w-24 h-1 bg-orange-500 mx-auto mb-12"></div>
+
+				<div class="bg-orange-50 rounded-3xl p-12 shadow-xl border border-orange-100">
+					<div class="mb-10">
+						<img 
+							src="/iskcon_noida_logo.jpg" 
+							alt="ISKCON Noida" 
+							class="h-32 mx-auto mb-6"
+						/>
+						<h3 class="text-3xl font-bold text-orange-900 mb-2">
+							ISKCON Noida
+						</h3>
+						<p class="text-orange-700 font-medium uppercase tracking-wide">Gītā Seva Team</p>
+					</div>
+
+					<div class="space-y-6 text-lg text-gray-700">
+						<p class="font-semibold text-xl">For inquiries regarding donations and seva participation:</p>
+						<div class="flex flex-col gap-4 max-w-md mx-auto mt-8">
+							<div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-orange-100">
+								<div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-2xl">📞</div>
+								<div class="text-left">
+									<p class="text-sm text-gray-500">Phone / WhatsApp</p>
+									<p class="font-bold text-gray-800">Details available on request</p>
+								</div>
+							</div>
+							<div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-orange-100">
+								<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-2xl">✉️</div>
+								<div class="text-left">
+									<p class="text-sm text-gray-500">Email</p>
+									<p class="font-bold text-gray-800">Details available on request</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="bg-black text-white py-16 px-4 border-t-4 border-orange-600">
+			<div class="max-w-6xl mx-auto text-center">
+				<div class="flex justify-center items-center gap-6 mb-8 flex-wrap">
+					<img 
+						src="/prabhupada.webp" 
+						alt="Srila Prabhupada" 
+						class="h-20 w-20 object-contain rounded-full border-2 border-yellow-500 shadow-glow"
+					/>
+					<div class="text-left">
+						<p class="text-2xl font-serif italic mb-2 text-yellow-400">
+							In the service of Śrīla Prabhupāda
+						</p>
+						<p class="text-sm text-gray-400 italic">
+							Founder-Ācārya: H.D.G. A.C. Bhaktivedanta Swami Śrīla Prabhupāda
+						</p>
+					</div>
+				</div>
+				
+				<p class="text-gray-500 text-sm uppercase tracking-widest mb-2">
+					International Society for Krishna Consciousness
+				</p>
+				<p class="text-gray-600 text-sm">
+					© 2025 ISKCON Noida - Bhagavad-Gītā Seva. All rights reserved.
+				</p>
+			</div>
+		</footer>
+
+		<Animations />
+	</body>
+</html>

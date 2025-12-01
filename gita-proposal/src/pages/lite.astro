@@ -1,0 +1,401 @@
+---
+import '../styles/global.css';
+import Animations from '../components/Animations.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Bhagavad-Gītā Donation & Value Education Seva - ISKCON Noida - Lite A3 Version" />
+		<title>Bhagavad-Gītā Seva | ISKCON Noida - Lite</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+		<style>
+			/* A3 Dimensions for Web: approx 842px width */
+			:root {
+				--c-saffron-dark: #9A3412; /* Deep burnt orange for text */
+				--c-saffron-mid: #EA580C;  /* Vibrant orange for accents */
+				--c-saffron-light: #FFEDD5; /* Light orange background */
+				--c-gold: #B45309;
+				--c-bg: #FFFBF2; /* Very light warm cream */
+				--c-text: #1C1917;
+			}
+			
+			body {
+				width: 842px;
+				margin: 0 auto;
+				padding: 20px;
+				background-color: var(--c-bg);
+				background-image: radial-gradient(#FED7AA 1px, transparent 1px);
+				background-size: 20px 20px;
+				font-family: 'Lato', sans-serif;
+				color: var(--c-text);
+				font-size: 11px; /* Base size for high density */
+				line-height: 1.3;
+				box-sizing: border-box;
+			}
+
+			/* Typography */
+			h1, h2, h3, h4 {
+				font-family: 'Cinzel', serif;
+				color: var(--c-saffron-dark);
+				margin: 0;
+			}
+
+			.header-row {
+				display: grid;
+				grid-template-columns: auto 1fr auto;
+				gap: 16px;
+				align-items: center;
+				border-bottom: 3px double #FDBA74;
+				padding-bottom: 12px;
+				margin-bottom: 12px;
+			}
+
+			.logo-group {
+				display: flex;
+				gap: 10px;
+			}
+			.logo-img { height: 50px; width: auto; border-radius: 4px; }
+			
+			.title-group { text-align: center; }
+			.title-main { font-size: 28px; font-weight: 900; letter-spacing: 1px; line-height: 1; }
+			.title-sub { font-size: 14px; font-weight: 700; color: var(--c-gold); letter-spacing: 3px; text-transform: uppercase; }
+			
+			.header-meta { text-align: right; font-size: 9px; color: #78350F; }
+
+			/* Grid Layout */
+			.main-grid {
+				display: grid;
+				grid-template-columns: 1fr 1.1fr; /* Right column slightly wider for tables */
+				gap: 12px;
+			}
+
+			/* Universal Card Style */
+			.info-card {
+				background: #FFFFFF;
+				border: 1px solid #FED7AA;
+				border-radius: 6px;
+				padding: 10px;
+				margin-bottom: 10px;
+				box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.info-card::before {
+				content: '';
+				position: absolute;
+				top: 0; left: 0; w: 4px; h: 100%;
+				background: var(--c-saffron-mid);
+				width: 3px;
+			}
+
+			.card-title {
+				font-size: 14px;
+				font-weight: 700;
+				border-bottom: 1px solid #FEEBC8;
+				padding-bottom: 4px;
+				margin-bottom: 8px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			/* Rate Badge */
+			.rate-badge {
+				background: var(--c-saffron-dark);
+				color: white;
+				padding: 2px 6px;
+				border-radius: 3px;
+				font-size: 10px;
+				font-family: 'Lato', sans-serif;
+				font-weight: bold;
+			}
+
+			/* Tables */
+			.density-table {
+				width: 100%;
+				border-collapse: collapse;
+				font-size: 10.5px;
+			}
+			
+			.density-table th {
+				text-align: left;
+				background: #FFF7ED;
+				color: var(--c-saffron-dark);
+				padding: 4px 6px;
+				font-weight: 700;
+				border-bottom: 1px solid #FED7AA;
+			}
+			
+			.density-table td {
+				padding: 3px 6px;
+				border-bottom: 1px solid #F3F4F6;
+			}
+			
+			.density-table tr:nth-child(even) { background-color: #FAFAFA; }
+			.density-table tr.highlight { background-color: #FEF3C7; font-weight: 700; }
+			
+			.price { color: var(--c-saffron-dark); font-weight: 700; }
+
+			/* Images */
+			.section-img {
+				width: 100%;
+				height: 80px;
+				object-fit: cover;
+				border-radius: 4px;
+				margin-bottom: 8px;
+				border: 1px solid #FED7AA;
+			}
+
+			/* Why This Seva List */
+			.why-list {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 4px;
+				font-size: 10px;
+			}
+			.why-item {
+				display: flex;
+				align-items: center;
+				gap: 4px;
+			}
+			.bullet { color: var(--c-saffron-mid); font-size: 12px; }
+
+			/* Donor Glorification */
+			.sticker-box {
+				background: #FFFBEB;
+				border: 1px dashed var(--c-gold);
+				padding: 8px;
+				margin-top: 8px;
+				text-align: center;
+				font-size: 10px;
+				color: #92400E;
+			}
+
+			/* Contact Strip */
+			.contact-strip {
+				background: var(--c-saffron-dark);
+				color: white;
+				padding: 10px;
+				border-radius: 6px;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				font-weight: bold;
+				font-size: 12px;
+				margin-top: 4px;
+			}
+
+			.notice {
+				background: #FEF2F2;
+				color: #991B1B;
+				font-size: 9px;
+				text-align: center;
+				padding: 2px;
+				margin-bottom: 8px;
+				border-radius: 2px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- No Publishing Policy Notice (Disabled) -->
+		<div class="notice no-print" style="display: none;">
+			⚠️ STRICT NO PUBLISHING POLICY: Internal Use Only. Contains copyrighted images.
+		</div>
+
+		<header class="header-row">
+			<div class="logo-group">
+				<img src="/prabhupada.webp" class="logo-img" style="border-radius: 50%; border: 2px solid #F59E0B;" />
+				<img src="/iskcon_noida_logo.jpg" class="logo-img" />
+			</div>
+			<div class="title-group">
+				<h1 class="title-main">Bhagavad-Gītā Seva</h1>
+				<div class="title-sub">Donation & Value Education</div>
+			</div>
+			<div class="header-meta">
+				<strong>ISKCON NOIDA</strong><br/>
+				Founder-Ācārya: His Divine Grace<br/>
+				A.C. Bhaktivedanta Swami Prabhupāda
+			</div>
+		</header>
+
+		<!-- Top Info Bar: Purpose + Rates -->
+		<div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 12px; margin-bottom: 12px;">
+			<div class="info-card" style="margin: 0;">
+				<h3 class="card-title">Project Purpose & Impact</h3>
+				<p style="margin-bottom: 8px;">
+					To distribute <strong>Bhagavad-Gītā As It Is</strong> among students, workers, families, and underprivileged communities. This seva spreads spiritual knowledge, positivity, and blessings everywhere.
+				</p>
+				<div class="why-list">
+					<div class="why-item"><span class="bullet">❖</span> Sowing seeds of Bhakti</div>
+					<div class="why-item"><span class="bullet">❖</span> Spreading light in communities</div>
+					<div class="why-item"><span class="bullet">❖</span> Helping youth choose right path</div>
+					<div class="why-item"><span class="bullet">❖</span> Upliftment of workers & villagers</div>
+				</div>
+			</div>
+			
+			<div class="info-card" style="margin: 0; background: #FFF7ED;">
+				<h3 class="card-title" style="border-color: #FDBA74;">Gītā Rates (Subsidized)</h3>
+				<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px;">
+					<div style="text-align: center;">
+						<div style="font-size: 18px; font-weight: 900; color: var(--c-saffron-dark);">₹210</div>
+						<div style="font-size: 10px; font-weight: bold;">Hindi Gītā</div>
+					</div>
+					<div style="height: 30px; width: 1px; background: #FDBA74;"></div>
+					<div style="text-align: center;">
+						<div style="font-size: 18px; font-weight: 900; color: var(--c-saffron-dark);">₹270</div>
+						<div style="font-size: 10px; font-weight: bold;">English Gītā</div>
+					</div>
+				</div>
+				<div style="text-align: center; font-size: 9px; margin-top: 6px; font-style: italic; color: #9A3412;">
+					*Includes book cost + distribution arrangement
+				</div>
+			</div>
+		</div>
+
+		<div class="main-grid">
+			<!-- LEFT COLUMN -->
+			<div>
+				<!-- Sponsor Gitas -->
+				<div class="info-card">
+					<h3 class="card-title">
+						A. Sponsor Gītās
+						<span class="rate-badge">Most Popular</span>
+					</h3>
+					
+					<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+						<!-- Hindi Table -->
+						<div>
+							<div style="font-size: 10px; font-weight: bold; text-align: center; background: #FFEDD5; padding: 2px; margin-bottom: 2px; color: #9A3412;">HINDI (₹210)</div>
+							<table class="density-table">
+								<tr><td>10 Gītās</td><td class="price">₹2,100</td></tr>
+								<tr class="highlight"><td>51 Gītās</td><td class="price">₹10,710</td></tr>
+								<tr><td>108 Gītās</td><td class="price">₹22,680</td></tr>
+								<tr><td>200 Gītās</td><td class="price">₹42,000</td></tr>
+								<tr><td>500 Gītās</td><td class="price">₹1,05,000</td></tr>
+								<tr><td>1000 Gītās</td><td class="price">₹2,10,000</td></tr>
+							</table>
+						</div>
+						<!-- English Table -->
+						<div>
+							<div style="font-size: 10px; font-weight: bold; text-align: center; background: #E0F2FE; padding: 2px; margin-bottom: 2px; color: #0369A1;">ENGLISH (₹270)</div>
+							<table class="density-table">
+								<tr><td>10 Gītās</td><td class="price">₹2,700</td></tr>
+								<tr class="highlight"><td>51 Gītās</td><td class="price">₹13,770</td></tr>
+								<tr><td>108 Gītās</td><td class="price">₹29,160</td></tr>
+								<tr><td>200 Gītās</td><td class="price">₹54,000</td></tr>
+								<tr><td>500 Gītās</td><td class="price">₹1,35,000</td></tr>
+								<tr><td>1000 Gītās</td><td class="price">₹2,70,000</td></tr>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<!-- Donor Glorification -->
+				<div class="info-card" style="background: #FEFCE8; border-color: #FDE047;">
+					<h3 class="card-title" style="border-color: #FDE047; color: #854D0E;">Donor Glorification</h3>
+					<div class="sticker-box">
+						<strong>Sticker on each book:</strong><br/>
+						"Gifted with love by the ____________ family."
+					</div>
+					<div style="font-size: 9px; margin-top: 6px; display: flex; flex-wrap: wrap; gap: 6px; justify-content: center;">
+						<span style="background: white; padding: 2px 4px; border-radius: 2px;">✓ English/Hindi Stickers</span>
+						<span style="background: white; padding: 2px 4px; border-radius: 2px;">✓ Corporate Designs</span>
+						<span style="background: white; padding: 2px 4px; border-radius: 2px;">✓ New Year/Festivals</span>
+					</div>
+				</div>
+
+				<!-- Benefits -->
+				<div class="info-card">
+					<h3 class="card-title">What Donors Receive</h3>
+					<ul style="font-size: 10.5px; margin: 0; padding-left: 16px; list-style-type: disc;">
+						<li>Photos & video proof of distribution</li>
+						<li>Detailed distribution report</li>
+						<li>Option for location selection (School, Jail, Slum)</li>
+						<li>Blessings from hundreds of families</li>
+						<li>Immense spiritual <em>sukṛti</em></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- RIGHT COLUMN -->
+			<div>
+				<!-- School -->
+				<div class="info-card">
+					<h3 class="card-title">
+						B. Adopt a School (Hindi)
+						<span class="rate-badge">High Impact</span>
+					</h3>
+					<img src="/program-images/school-actual-iskcon.jpg" class="section-img" />
+					<p style="font-size: 10px; margin-bottom: 4px;">Most govt. schools prefer Hindi (₹210/student).</p>
+					<table class="density-table">
+						<thead><tr><th>Students</th><th>Includes</th><th style="text-align:right">Seva</th></tr></thead>
+						<tbody>
+							<tr><td>150 Students</td><td>Session + Book + Snack</td><td class="price" style="text-align:right">₹31,500</td></tr>
+							<tr><td>300 Students</td><td>Session + Book + Snack</td><td class="price" style="text-align:right">₹63,000</td></tr>
+							<tr class="highlight"><td>500 Students</td><td>Full School Program</td><td class="price" style="text-align:right">₹1,05,000</td></tr>
+						</tbody>
+					</table>
+					<div style="font-size: 9px; margin-top: 4px; color: #666;">
+						Includes: Value Education Session, Gītā, Posters, Bookmarks, Acknowledgement
+					</div>
+				</div>
+
+				<!-- Factory -->
+				<div class="info-card">
+					<h3 class="card-title">C. Adopt a Workplace (Hindi)</h3>
+					<div style="display: flex; gap: 8px; align-items: flex-start;">
+						<img src="/program-images/workplace-actual-iskcon.jpg" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;" />
+						<table class="density-table" style="flex-grow: 1;">
+							<tbody>
+								<tr><td>100 Workers</td><td class="price" style="text-align:right">₹21,000</td></tr>
+								<tr class="highlight"><td>500 Workers</td><td class="price" style="text-align:right">₹1,05,000</td></tr>
+								<tr><td>1000 Workers</td><td class="price" style="text-align:right">₹2,10,000</td></tr>
+							</tbody>
+						</table>
+					</div>
+					<div style="font-size: 9px; margin-top: 4px; color: #666;">
+						Workers benefit immensely. English option available on request.
+					</div>
+				</div>
+
+				<!-- Jails/Slums -->
+				<div class="info-card">
+					<h3 class="card-title">D. Jails, Slums & Villages</h3>
+					<div style="display: flex; gap: 8px; align-items: flex-start;">
+						<img src="/program-images/community-actual-iskcon.jpg" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;" />
+						<div style="flex-grow: 1;">
+							<p style="font-size: 10px; font-weight: bold; color: var(--c-saffron-mid); margin-bottom: 2px;">Most Impactful (Hindi Only)</p>
+							<table class="density-table">
+								<tbody>
+									<tr><td>200 People</td><td class="price" style="text-align:right">₹42,000</td></tr>
+									<tr class="highlight"><td>500 People</td><td class="price" style="text-align:right">₹1,05,000</td></tr>
+									<tr><td>1000 People</td><td class="price" style="text-align:right">₹2,10,000</td></tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer Contact -->
+		<div class="contact-strip">
+			<div>ISKCON NOIDA - GĪTĀ SEVA TEAM</div>
+			<div>📞 Phone: _________________</div>
+			<div>💬 WhatsApp: _________________</div>
+			<div>👤 Coordinator: _________________</div>
+		</div>
+		<div style="text-align: center; font-size: 9px; margin-top: 6px; color: #666;">
+			© 2025 ISKCON Noida. "Each Gītā changes a heart. Each donation pleases Śrīla Prabhupāda."
+		</div>
+
+		<Animations />
+	</body>
+</html>

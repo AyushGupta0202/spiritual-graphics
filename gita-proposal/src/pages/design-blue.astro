@@ -1,0 +1,202 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>New Year Gifting Proposal | Royal Blue</title>
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+		<style>
+			:root {
+				--royal-blue: #1E3A8A;
+				--royal-blue-dark: #172554;
+				--royal-gold: #F59E0B;
+				--royal-gold-dark: #B45309;
+				--bg-cream: #FFFBF0;
+			}
+			
+			body {
+				background-color: var(--bg-cream);
+				font-family: 'Lato', sans-serif;
+				color: #1F2937;
+				min-height: 100vh;
+				display: flex;
+				justify-content: center;
+				padding: 40px;
+			}
+
+			.main-container {
+				width: 1000px;
+				background: #FFF7ED;
+				border: 4px double var(--royal-gold);
+				box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+				position: relative;
+				padding: 40px;
+				border-radius: 4px;
+			}
+
+			.corner-ornament {
+				position: absolute;
+				width: 80px;
+				height: 80px;
+				border: 4px solid var(--royal-gold);
+				z-index: 10;
+			}
+			.tl { top: 10px; left: 10px; border-right: none; border-bottom: none; }
+			.tr { top: 10px; right: 10px; border-left: none; border-bottom: none; }
+			.bl { bottom: 10px; left: 10px; border-right: none; border-top: none; }
+			.br { bottom: 10px; right: 10px; border-left: none; border-top: none; }
+
+			.header-banner {
+				background: linear-gradient(180deg, var(--royal-blue) 0%, var(--royal-blue-dark) 100%);
+				border-radius: 100px;
+				padding: 15px 60px;
+				text-align: center;
+				color: white;
+				border: 3px solid var(--royal-gold);
+				box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+				margin-bottom: 40px;
+				position: relative;
+				z-index: 20;
+			}
+
+			.gold-divider {
+				height: 2px;
+				background: linear-gradient(90deg, transparent, var(--royal-gold), transparent);
+				margin: 20px 0;
+			}
+
+			.feature-card {
+				background: white;
+				border: 1px solid #FDBA74;
+				border-radius: 12px;
+				padding: 15px;
+				text-align: center;
+				transition: transform 0.2s;
+				box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+			}
+			.feature-card:hover { transform: translateY(-2px); }
+
+			.rate-card {
+				background: var(--royal-blue);
+				color: white;
+				border-radius: 12px;
+				padding: 20px;
+				border: 2px solid var(--royal-gold);
+				text-align: center;
+			}
+
+			.font-cinzel { font-family: 'Cinzel', serif; }
+		</style>
+	</head>
+	<body>
+		<div class="main-container">
+			<!-- Ornaments -->
+			<div class="corner-ornament tl"></div>
+			<div class="corner-ornament tr"></div>
+			<div class="corner-ornament bl"></div>
+			<div class="corner-ornament br"></div>
+
+			<!-- Header -->
+			<div class="text-center relative z-20">
+				<img src="/iskcon_noida_logo.jpg" class="h-24 mx-auto mb-6 drop-shadow-lg bg-white rounded-full p-1" />
+				
+				<div class="header-banner inline-block">
+					<div class="text-[#FCD34D] text-xs font-bold tracking-[0.3em] uppercase mb-1">New Year Gifting Proposal</div>
+					<h1 class="text-4xl font-cinzel font-bold text-white tracking-wider drop-shadow-md">
+						Bhagavad-Gītā Gift Packages
+					</h1>
+				</div>
+			</div>
+
+			<div class="grid grid-cols-12 gap-8 mt-8">
+				<!-- Left Column -->
+				<div class="col-span-3 space-y-6 pt-8">
+					<div class="feature-card">
+						<div class="text-4xl mb-2">🌐</div>
+						<h3 class="font-bold text-orange-900 text-sm">Universally Respected</h3>
+					</div>
+					<div class="feature-card">
+						<div class="text-4xl mb-2">📈</div>
+						<h3 class="font-bold text-orange-900 text-sm">Boosts Productivity</h3>
+					</div>
+					
+					<div class="rate-card mt-auto">
+						<h3 class="text-[#FCD34D] font-cinzel font-bold border-b border-blue-700 pb-2 mb-3">Gift Options</h3>
+						<div class="mb-4">
+							<div class="text-xs text-blue-300 uppercase">Hindi</div>
+							<div class="text-2xl font-bold text-white">₹210</div>
+						</div>
+						<div>
+							<div class="text-xs text-blue-300 uppercase">English</div>
+							<div class="text-2xl font-bold text-white">₹270</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Center Column -->
+				<div class="col-span-6 text-center relative">
+					<div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
+						<div class="bg-[#172554] text-white py-3 px-8 rounded-full inline-block border border-[#FCD34D] shadow-lg">
+							<h2 class="font-cinzel text-xl text-[#FCD34D]">The Gift of Wisdom</h2>
+						</div>
+					</div>
+					
+					<div class="mt-12 relative z-10">
+						<div class="absolute inset-0 bg-yellow-400 blur-3xl opacity-20 rounded-full"></div>
+						<img src="/bg_aii_cover.webp" class="w-72 mx-auto drop-shadow-2xl transform hover:scale-105 transition-transform duration-500" />
+					</div>
+
+					<div class="mt-10 bg-orange-50 rounded-xl p-4 border border-orange-200">
+						<h3 class="font-bold text-orange-900 mb-4 uppercase tracking-widest text-sm">Company Benefits</h3>
+						<div class="grid grid-cols-4 gap-2 text-xs font-bold text-orange-800">
+							<div class="p-2 bg-white rounded shadow-sm">🎁<br>Meaningful</div>
+							<div class="p-2 bg-white rounded shadow-sm">🚀<br>Motivation</div>
+							<div class="p-2 bg-white rounded shadow-sm">🤝<br>Culture</div>
+							<div class="p-2 bg-white rounded shadow-sm">❤️<br>Goodwill</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Right Column -->
+				<div class="col-span-3 space-y-6 pt-8">
+					<div class="feature-card">
+						<div class="text-4xl mb-2">🧩</div>
+						<h3 class="font-bold text-orange-900 text-sm">Relatable & Practical</h3>
+					</div>
+					<div class="feature-card">
+						<div class="text-4xl mb-2">🎁</div>
+						<h3 class="font-bold text-orange-900 text-sm">Long-lasting Gift</h3>
+					</div>
+
+					<div class="rate-card mt-auto bg-[#172554]">
+						<h3 class="text-[#FCD34D] font-cinzel font-bold border-b border-blue-800 pb-2 mb-3">Features</h3>
+						<ul class="text-left text-xs space-y-2 text-blue-100 pl-2">
+							<li>✓ Custom Sticker</li>
+							<li>✓ Company Branding</li>
+							<li>✓ Bulk Packing</li>
+							<li>✓ Optional Session</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<div class="mt-12 bg-[#1E3A8A] text-white p-6 rounded-xl flex justify-between items-center border-t-4 border-[#F59E0B] shadow-xl">
+				<div class="flex items-center gap-4">
+					<img src="/prabhupada.webp" class="h-16 w-16 rounded-full border-2 border-[#FCD34D]" />
+					<div class="text-left">
+						<div class="font-cinzel font-bold text-lg">ISKCON Noida</div>
+						<div class="text-xs text-[#FCD34D]">Founder-Ācārya: His Divine Grace</div>
+					</div>
+				</div>
+				<div class="text-right">
+					<div class="text-[#FCD34D] text-xs font-bold uppercase mb-1">Contact for Gifting</div>
+					<div class="text-2xl font-bold">8800004333</div>
+					<div class="text-xs text-blue-200">connect@iskconnoida.org</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

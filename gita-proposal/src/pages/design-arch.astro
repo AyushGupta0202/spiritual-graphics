@@ -1,0 +1,182 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>New Year Gifting Proposal | Arch Design</title>
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+		<style>
+			body { background: #FFF8F0; font-family: 'Lato', sans-serif; }
+			.arch-container {
+				width: 1000px;
+				margin: 40px auto;
+				position: relative;
+				background: #FFFBEB;
+				box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+			}
+			
+			/* Arch Frame Implementation */
+			.frame {
+				border: 20px solid #F59E0B;
+				border-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h60v60H0z' fill='%23FFF7ED'/%3E%3Cpath d='M0 0h60v10H0zm0 50h60v10H0zm0 0h10v60H0zm50 0h10v60H50z' fill='%23F59E0B'/%3E%3Ccircle cx='30' cy='30' r='10' fill='%23B45309' opacity='0.2'/%3E%3C/svg%3E") 30 stretch;
+				padding: 40px;
+				position: relative;
+			}
+
+			.arch-header {
+				text-align: center;
+				margin-top: -80px;
+				position: relative;
+				z-index: 10;
+			}
+
+			.arch-curve {
+				width: 100%;
+				height: 120px;
+				background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 120' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'%3E%3Cpath d='M0 120 V60 Q500 -60 1000 60 V120' fill='%23FFFBEB' stroke='%23B45309' stroke-width='4'/%3E%3C/svg%3E") no-repeat top center;
+				background-size: 100% 100%;
+				display: flex;
+				justify-content: center;
+				align-items: flex-end;
+				padding-bottom: 20px;
+			}
+
+			.lotus {
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				background: #FFF;
+				border-radius: 50%;
+				border: 2px solid #F59E0B;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 24px;
+				box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+			}
+			.lotus-l { top: 20px; left: 20px; }
+			.lotus-r { top: 20px; right: 20px; }
+
+			.bg-pattern {
+				background-image: radial-gradient(#FEF3C7 1px, transparent 1px);
+				background-size: 24px 24px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="arch-container frame bg-pattern">
+			<div class="lotus lotus-l">🪷</div>
+			<div class="lotus lotus-r">🪷</div>
+
+			<div class="arch-header">
+				<div class="arch-curve">
+					<img src="/iskcon_noida_logo.jpg" class="h-20 rounded-full bg-white p-2 shadow-md border border-orange-200" />
+				</div>
+			</div>
+
+			<div class="text-center mb-12">
+				<div class="inline-block border-b-2 border-orange-300 mb-4 pb-1">
+					<h2 class="text-xl font-cinzel font-bold text-gray-600 tracking-widest">PROPOSAL FOR NEW YEAR GIFTING</h2>
+				</div>
+				
+				<div class="flex justify-center mb-6">
+					<div class="relative">
+						<div class="absolute inset-0 bg-yellow-200 rounded-full filter blur-xl opacity-50"></div>
+						<img src="/prabhupada.webp" class="h-32 relative z-10 drop-shadow-xl" />
+					</div>
+				</div>
+
+				<h1 class="text-5xl font-cinzel font-bold text-[#9A3412] mb-2">Bhagavad-Gītā</h1>
+				<p class="text-2xl font-playfair italic text-[#EA580C]">The Gift of Wisdom & Inspiration</p>
+			</div>
+
+			<div class="grid grid-cols-2 gap-12">
+				<!-- Left Content -->
+				<div class="space-y-8">
+					<div class="bg-orange-50 p-6 rounded-xl border-l-4 border-orange-500 shadow-sm">
+						<h3 class="font-bold text-xl text-[#7C2D12] mb-6 font-cinzel">Why It's The Best Gift</h3>
+						<div class="grid grid-cols-2 gap-6">
+							<div class="text-center">
+								<div class="text-2xl mb-1">🌍</div>
+								<div class="text-sm font-bold text-gray-700">Universally Respected</div>
+							</div>
+							<div class="text-center">
+								<div class="text-2xl mb-1">🧘</div>
+								<div class="text-sm font-bold text-gray-700">Stress Management</div>
+							</div>
+							<div class="text-center">
+								<div class="text-2xl mb-1">🚀</div>
+								<div class="text-sm font-bold text-gray-700">Increases Productivity</div>
+							</div>
+							<div class="text-center">
+								<div class="text-2xl mb-1">⭐</div>
+								<div class="text-sm font-bold text-gray-700">Boosts Morale</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex gap-6 items-center bg-white p-4 rounded-xl shadow-md border border-gray-100">
+						<img src="/bg_aii_cover.webp" class="w-32 rounded shadow-lg transform -rotate-3" />
+						<div class="flex-1 space-y-3">
+							<div>
+								<div class="text-xs text-gray-500 uppercase font-bold">Hindi Edition</div>
+								<div class="text-2xl font-bold text-[#C2410C]">₹210</div>
+							</div>
+							<div class="h-px bg-gray-200"></div>
+							<div>
+								<div class="text-xs text-gray-500 uppercase font-bold">English Edition</div>
+								<div class="text-2xl font-bold text-[#C2410C]">₹270</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Right Content -->
+				<div class="space-y-6">
+					<div class="bg-[#1E3A8A] rounded-xl overflow-hidden shadow-lg border-2 border-[#F59E0B]">
+						<div class="bg-[#172554] p-3 text-center text-[#FEF3C7] font-bold tracking-wide border-b border-blue-700">
+							SUGGESTED PACKAGES
+						</div>
+						<table class="w-full text-sm text-white">
+							<thead class="bg-[#1E40AF] text-blue-200 text-xs uppercase">
+								<tr>
+									<th class="p-3 text-left">Qty</th>
+									<th class="p-3 text-right">Hindi</th>
+									<th class="p-3 text-right">English</th>
+								</tr>
+							</thead>
+							<tbody class="divide-y divide-blue-800">
+								<tr><td class="p-3">100</td><td class="p-3 text-right">₹21,000</td><td class="p-3 text-right">₹27,000</td></tr>
+								<tr><td class="p-3">250</td><td class="p-3 text-right">₹52,500</td><td class="p-3 text-right">₹67,500</td></tr>
+								<tr><td class="p-3">500</td><td class="p-3 text-right">₹1,05,000</td><td class="p-3 text-right">₹1,35,000</td></tr>
+								<tr class="bg-[#172554] text-[#FCD34D] font-bold"><td class="p-3">1000</td><td class="p-3 text-right">₹2,10,000</td><td class="p-3 text-right">₹2,70,000</td></tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="bg-[#FFEDD5] p-6 rounded-xl border border-orange-200">
+						<h3 class="text-center font-bold text-[#7C2D12] mb-4 border-b border-orange-300 pb-2">Special Features</h3>
+						<div class="flex justify-between text-center text-xs font-bold text-gray-800">
+							<div class="flex-1">📝<br>Custom Sticker</div>
+							<div class="flex-1 border-x border-orange-300">📦<br>Bulk Packing</div>
+							<div class="flex-1">🎤<br>Inspiration Session</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mt-12 bg-gradient-to-r from-[#9A3412] to-[#EA580C] text-white p-4 rounded-lg shadow-lg flex justify-between items-center">
+				<div class="pl-4">
+					<h4 class="font-bold text-[#FCD34D] text-lg font-cinzel">Start Gifting Today</h4>
+					<p class="text-xs text-orange-100">ISKCON Noida Corporate Team</p>
+				</div>
+				<div class="text-right pr-4">
+					<div class="font-mono font-bold text-2xl">8800004333</div>
+					<div class="text-xs text-orange-200">connect@iskconnoida.org</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

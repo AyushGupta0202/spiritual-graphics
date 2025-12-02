@@ -1,0 +1,161 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>New Year Gifting Proposal | Design 4</title>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+		<style>
+			body { background: #F3F4F6; color: #1F2937; font-family: 'Inter', sans-serif; }
+			.serif-font { font-family: 'Playfair Display', serif; }
+			.clean-card { background: white; border-radius: 16px; box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1); }
+			.accent-bar { height: 8px; background: linear-gradient(90deg, #EA580C, #EAB308); }
+			.stat-card { background: #F9FAFB; border: 1px solid #E5E7EB; border-radius: 8px; padding: 16px; text-align: center; transition: all 0.2s; }
+			.stat-card:hover { border-color: #F97316; transform: translateY(-2px); }
+		</style>
+	</head>
+	<body class="min-h-screen p-8 flex justify-center bg-gray-100">
+		<div class="w-[1000px] bg-white shadow-2xl min-h-screen flex flex-col relative overflow-hidden rounded-xl">
+			<div class="accent-bar w-full absolute top-0 left-0"></div>
+			
+			<!-- Header -->
+			<div class="p-12 pb-8 flex justify-between items-end border-b border-gray-100">
+				<div class="flex items-center gap-6">
+					<img src="/iskcon_noida_logo.jpg" class="h-20 object-contain" />
+					<div>
+						<div class="flex items-center gap-2 mb-1">
+							<span class="h-px w-8 bg-orange-500"></span>
+							<p class="text-xs uppercase tracking-[0.2em] text-orange-600 font-bold">Corporate Gifting 2025</p>
+						</div>
+						<h1 class="text-5xl font-bold text-gray-900 serif-font leading-none">New Year Proposal</h1>
+						<p class="text-lg text-gray-500 mt-2 font-light tracking-wide">Presented by ISKCON Noida</p>
+					</div>
+				</div>
+				<div class="text-right">
+					<img src="/prabhupada.webp" class="h-16 w-16 rounded-full border-2 border-gray-100 mb-2 ml-auto p-1 bg-white" />
+					<p class="text-[10px] text-gray-400 uppercase tracking-wide font-bold">Founder-Acharya</p>
+					<p class="text-sm font-semibold text-gray-700">A.C. Bhaktivedanta Swami</p>
+				</div>
+			</div>
+
+			<div class="p-12 grid grid-cols-12 gap-12 flex-grow">
+				<!-- Left Content -->
+				<div class="col-span-7 space-y-12">
+					
+					<!-- Hero Statement -->
+					<div>
+						<h2 class="text-4xl font-bold text-gray-900 serif-font mb-4 leading-tight">
+							"Bhagavad-Gītā"<br>
+							<span class="text-orange-600 italic font-normal text-3xl">The Ultimate Gift of Wisdom</span>
+						</h2>
+						<p class="text-gray-600 leading-relaxed border-l-4 border-gray-200 pl-4 italic">
+							In today's fast-paced corporate world, give a gift that offers clarity, resilience, and timeless direction. A gift that signifies you care about your team's holistic well-being.
+						</p>
+					</div>
+
+					<!-- Value Props Grid -->
+					<div class="grid grid-cols-2 gap-x-8 gap-y-6">
+						<div class="flex gap-4 items-start group">
+							<div class="bg-orange-50 text-orange-600 w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-lg group-hover:bg-orange-600 group-hover:text-white transition-colors">01</div>
+							<div>
+								<h4 class="font-bold text-gray-900">Universally Respected</h4>
+								<p class="text-xs text-gray-500 mt-1">Transcends cultures & beliefs, offering universal truths.</p>
+							</div>
+						</div>
+						<div class="flex gap-4 items-start group">
+							<div class="bg-orange-50 text-orange-600 w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-lg group-hover:bg-orange-600 group-hover:text-white transition-colors">02</div>
+							<div>
+								<h4 class="font-bold text-gray-900">Practical Leadership</h4>
+								<p class="text-xs text-gray-500 mt-1">Mastery over stress, mind, and decision-making.</p>
+							</div>
+						</div>
+						<div class="flex gap-4 items-start group">
+							<div class="bg-orange-50 text-orange-600 w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-lg group-hover:bg-orange-600 group-hover:text-white transition-colors">03</div>
+							<div>
+								<h4 class="font-bold text-gray-900">Boosts Productivity</h4>
+								<p class="text-xs text-gray-500 mt-1">Encourages discipline, focus, and ethical work culture.</p>
+							</div>
+						</div>
+						<div class="flex gap-4 items-start group">
+							<div class="bg-orange-50 text-orange-600 w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-lg group-hover:bg-orange-600 group-hover:text-white transition-colors">04</div>
+							<div>
+								<h4 class="font-bold text-gray-900">Enduring Value</h4>
+								<p class="text-xs text-gray-500 mt-1">Unlike consumables, this gift lasts a lifetime.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Packages Table -->
+					<div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+						<div class="bg-gray-50 px-6 py-4 border-b border-gray-200 flex justify-between items-center">
+							<h3 class="font-bold text-gray-800 text-sm uppercase tracking-wide">Investment Packages</h3>
+							<span class="text-[10px] bg-white border border-gray-200 px-2 py-1 rounded text-gray-500">Valid for 2025</span>
+						</div>
+						<table class="w-full text-sm text-left">
+							<thead class="bg-white text-gray-500 border-b border-gray-100">
+								<tr>
+									<th class="px-6 py-3 font-medium">Employees</th>
+									<th class="px-6 py-3 font-medium text-right">Hindi (₹210)</th>
+									<th class="px-6 py-3 font-medium text-right">English (₹270)</th>
+								</tr>
+							</thead>
+							<tbody class="divide-y divide-gray-100 bg-white">
+								<tr><td class="px-6 py-3 font-medium text-gray-900">100</td><td class="px-6 py-3 text-right text-gray-600">₹21,000</td><td class="px-6 py-3 text-right text-gray-600">₹27,000</td></tr>
+								<tr><td class="px-6 py-3 font-medium text-gray-900">250</td><td class="px-6 py-3 text-right text-gray-600">₹52,500</td><td class="px-6 py-3 text-right text-gray-600">₹67,500</td></tr>
+								<tr class="bg-orange-50/30"><td class="px-6 py-3 font-bold text-gray-900">500</td><td class="px-6 py-3 text-right font-bold text-orange-700">₹1,05,000</td><td class="px-6 py-3 text-right font-bold text-orange-700">₹1,35,000</td></tr>
+								<tr><td class="px-6 py-3 font-bold text-gray-900">1000</td><td class="px-6 py-3 text-right font-bold text-gray-900">₹2,10,000</td><td class="px-6 py-3 text-right font-bold text-gray-900">₹2,70,000</td></tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<!-- Right Sidebar -->
+				<div class="col-span-5 flex flex-col h-full">
+					<div class="bg-gray-50 p-10 rounded-2xl border border-gray-200 flex-grow flex flex-col items-center text-center relative overflow-hidden">
+						<div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-orange-100 via-yellow-50 to-transparent rounded-bl-full opacity-60"></div>
+						
+						<img src="/bg_aii_cover.webp" class="w-64 shadow-2xl rounded-lg mb-10 transform hover:scale-105 transition-transform duration-500 relative z-10" />
+						
+						<div class="w-full grid grid-cols-2 gap-4 mb-8 relative z-10">
+							<div class="stat-card bg-white">
+								<div class="text-xs text-gray-400 uppercase tracking-wider mb-1 font-bold">HINDI</div>
+								<div class="text-3xl font-bold text-gray-900">₹210</div>
+							</div>
+							<div class="stat-card bg-white">
+								<div class="text-xs text-gray-400 uppercase tracking-wider mb-1 font-bold">ENGLISH</div>
+								<div class="text-3xl font-bold text-gray-900">₹270</div>
+							</div>
+						</div>
+
+						<div class="w-full bg-white p-6 rounded-xl border border-gray-200 text-left shadow-sm relative z-10">
+							<h4 class="font-bold text-gray-900 mb-4 text-xs uppercase tracking-widest border-b border-gray-100 pb-2">Corporate Services</h4>
+							<ul class="space-y-3 text-sm text-gray-600">
+								<li class="flex items-center gap-3"><span class="text-green-500">●</span> Custom Company Sticker</li>
+								<li class="flex items-center gap-3"><span class="text-green-500">●</span> Branding Options Available</li>
+								<li class="flex items-center gap-3"><span class="text-green-500">●</span> Organized Bulk Delivery</li>
+								<li class="flex items-center gap-3"><span class="text-green-500">●</span> 20-min Wisdom Session</li>
+							</ul>
+						</div>
+
+						<div class="mt-auto w-full pt-8 relative z-10">
+							<div class="bg-[#1F2937] text-white p-6 rounded-xl shadow-xl text-left">
+								<div class="text-[10px] text-gray-400 uppercase tracking-widest mb-3">Start Gifting</div>
+								<div class="flex items-center gap-3 mb-2">
+									<span class="text-xl">📞</span>
+									<span class="font-bold text-2xl tracking-wide font-mono">8800004333</span>
+								</div>
+								<div class="text-sm text-gray-400 pl-8 mb-4">connect@iskconnoida.org</div>
+								<div class="text-[10px] text-gray-600 pt-3 border-t border-gray-700 flex justify-between">
+									<span>ISKCON Noida Team</span>
+									<span>Coord: HG Kalpavriksha</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

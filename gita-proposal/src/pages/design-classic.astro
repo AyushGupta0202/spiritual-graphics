@@ -1,0 +1,203 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>New Year Gifting Proposal | Design 5</title>
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+		<style>
+			body { background: #FEF3C7; font-family: 'Lato', sans-serif; }
+			.mandala-bg {
+				background-color: #FFFBEB;
+				background-image: 
+					radial-gradient(circle at 0 0, rgba(245, 158, 11, 0.08) 0%, transparent 20%),
+					radial-gradient(circle at 100% 0, rgba(245, 158, 11, 0.08) 0%, transparent 20%),
+					radial-gradient(circle at 100% 100%, rgba(245, 158, 11, 0.08) 0%, transparent 20%),
+					radial-gradient(circle at 0 100%, rgba(245, 158, 11, 0.08) 0%, transparent 20%);
+			}
+			.classic-border {
+				border: 12px solid #78350F;
+				position: relative;
+				background: #FFFBEB;
+			}
+			.classic-border::after {
+				content: '';
+				position: absolute;
+				top: 4px; left: 4px; right: 4px; bottom: 4px;
+				border: 2px solid #B45309;
+				pointer-events: none;
+			}
+			.ornament-divider {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 1.5rem 0;
+				color: #B45309;
+			}
+			.ornament-divider::before, .ornament-divider::after {
+				content: '';
+				height: 1px;
+				width: 100px;
+				background: #B45309;
+				margin: 0 1rem;
+			}
+			.corner-flourish {
+				position: absolute;
+				font-size: 48px;
+				line-height: 1;
+				color: #B45309;
+				opacity: 0.4;
+			}
+		</style>
+	</head>
+	<body class="min-h-screen p-8 flex justify-center bg-[#FDE68A]">
+		<div class="w-[1000px] classic-border p-16 shadow-2xl relative mandala-bg">
+			
+			<!-- Corner Ornaments -->
+			<div class="corner-flourish top-6 left-6">⚜️</div>
+			<div class="corner-flourish top-6 right-6">⚜️</div>
+			<div class="corner-flourish bottom-6 left-6">⚜️</div>
+			<div class="corner-flourish bottom-6 right-6">⚜️</div>
+
+			<!-- Header -->
+			<div class="text-center mb-12">
+				<img src="/iskcon_noida_logo.jpg" class="h-28 mx-auto mb-6 drop-shadow-sm" />
+				<h2 class="text-[#B45309] font-cinzel text-xl tracking-[0.4em] font-bold mb-2 uppercase">ISKCON NOIDA PRESENTS</h2>
+				<h1 class="text-6xl font-cinzel font-bold text-[#451a03] uppercase tracking-wide mb-4">New Year Gifting 2025</h1>
+				<div class="ornament-divider text-3xl">❖</div>
+				<p class="text-2xl text-[#9A3412] italic font-serif">"Bhagavad-Gītā – The Gift of Wisdom & Inspiration"</p>
+			</div>
+
+			<!-- Main Content -->
+			<div class="grid grid-cols-12 gap-12 items-start">
+				<!-- Left Side: Product -->
+				<div class="col-span-5 text-center bg-white p-8 rounded-t-full border-2 border-[#FED7AA] shadow-lg relative pt-16">
+					<div class="absolute top-0 left-0 w-full h-2 bg-[#F59E0B]"></div>
+					<div class="relative mb-8">
+						<div class="absolute inset-0 bg-yellow-100 rounded-full filter blur-3xl opacity-60"></div>
+						<img src="/bg_aii_cover.webp" class="w-56 mx-auto shadow-2xl border-4 border-white relative z-10" />
+					</div>
+					
+					<div class="space-y-4 mb-6">
+						<div class="flex justify-between items-center border-b border-gray-100 pb-2">
+							<span class="text-gray-600 font-bold text-sm uppercase">Hindi Edition</span>
+							<span class="text-2xl font-bold text-[#C2410C]">₹210</span>
+						</div>
+						<div class="flex justify-between items-center border-b border-gray-100 pb-2">
+							<span class="text-gray-600 font-bold text-sm uppercase">English Edition</span>
+							<span class="text-2xl font-bold text-[#C2410C]">₹270</span>
+						</div>
+					</div>
+
+					<div class="text-left bg-[#FFF7ED] p-4 rounded border border-[#FFEDD5]">
+						<h4 class="font-bold text-[#9A3412] mb-3 text-sm uppercase tracking-wide text-center">Special Features</h4>
+						<ul class="text-sm text-gray-700 space-y-2">
+							<li>✓ Custom Sticker</li>
+							<li>✓ Company Branding</li>
+							<li>✓ Bulk Packing</li>
+							<li>✓ Organized Distribution</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Right Side: Details -->
+				<div class="col-span-7 space-y-8">
+					<div class="bg-white p-8 rounded-xl border border-orange-100 shadow-sm relative">
+						<div class="absolute -left-2 top-8 w-2 h-12 bg-[#B45309]"></div>
+						<h3 class="font-cinzel font-bold text-2xl text-[#451a03] mb-6">Why Bhagavad-Gītā?</h3>
+						<div class="grid grid-cols-2 gap-x-8 gap-y-6">
+							<div class="flex items-start gap-3">
+								<span class="text-[#F59E0B] text-xl">✦</span>
+								<div>
+									<h4 class="font-bold text-gray-800">Universally Respected</h4>
+									<p class="text-xs text-gray-500">Across cultures & beliefs</p>
+								</div>
+							</div>
+							<div class="flex items-start gap-3">
+								<span class="text-[#F59E0B] text-xl">✦</span>
+								<div>
+									<h4 class="font-bold text-gray-800">Relatable & Practical</h4>
+									<p class="text-xs text-gray-500">Leadership & Stress Management</p>
+								</div>
+							</div>
+							<div class="flex items-start gap-3">
+								<span class="text-[#F59E0B] text-xl">✦</span>
+								<div>
+									<h4 class="font-bold text-gray-800">Boosts Productivity</h4>
+									<p class="text-xs text-gray-500">Enhances discipline & focus</p>
+								</div>
+							</div>
+							<div class="flex items-start gap-3">
+								<span class="text-[#F59E0B] text-xl">✦</span>
+								<div>
+									<h4 class="font-bold text-gray-800">Meaningful Gift</h4>
+									<p class="text-xs text-gray-500">Better than sweets/mugs</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="border-4 double border-[#B45309] bg-white shadow-md">
+						<div class="bg-[#78350F] text-[#FEF3C7] p-3 text-center font-bold font-cinzel tracking-widest text-sm">
+							SUGGESTED GIFT PACKAGES
+						</div>
+						<table class="w-full text-sm">
+							<thead class="bg-[#FFF7ED] text-[#7C2D12]">
+								<tr>
+									<th class="p-3 text-left border-b border-orange-200">Qty</th>
+									<th class="p-3 text-right border-b border-orange-200">Hindi</th>
+									<th class="p-3 text-right border-b border-orange-200">English</th>
+								</tr>
+							</thead>
+							<tbody class="divide-y divide-orange-100">
+								<tr><td class="p-3 font-bold text-gray-600">100</td><td class="p-3 text-right">₹21,000</td><td class="p-3 text-right">₹27,000</td></tr>
+								<tr><td class="p-3 font-bold text-gray-600">250</td><td class="p-3 text-right">₹52,500</td><td class="p-3 text-right">₹67,500</td></tr>
+								<tr><td class="p-3 font-bold text-gray-600">500</td><td class="p-3 text-right font-bold text-[#C2410C]">₹1,05,000</td><td class="p-3 text-right font-bold text-[#C2410C]">₹1,35,000</td></tr>
+								<tr class="bg-[#FFF7ED]"><td class="p-3 font-bold text-[#7C2D12]">1000</td><td class="p-3 text-right font-bold text-[#7C2D12]">₹2,10,000</td><td class="p-3 text-right font-bold text-[#7C2D12]">₹2,70,000</td></tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<!-- Benefits Strip -->
+			<div class="mt-10 grid grid-cols-4 gap-6 text-center py-6 border-t-2 border-b-2 border-[#B45309] border-double bg-[#FFFBEB]">
+				<div>
+					<div class="text-3xl mb-2">🎁</div>
+					<p class="text-sm font-bold text-[#7C2D12]">Memorable Gift</p>
+				</div>
+				<div>
+					<div class="text-3xl mb-2">🚀</div>
+					<p class="text-sm font-bold text-[#7C2D12]">Motivation & Focus</p>
+				</div>
+				<div>
+					<div class="text-3xl mb-2">🤝</div>
+					<p class="text-sm font-bold text-[#7C2D12]">Value Culture</p>
+				</div>
+				<div>
+					<div class="text-3xl mb-2">🏢</div>
+					<p class="text-sm font-bold text-[#7C2D12]">Brand Dignity</p>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<div class="mt-10 text-center">
+				<div class="inline-block bg-[#78350F] text-[#FEF3C7] px-10 py-4 rounded shadow-lg border-2 border-[#F59E0B]">
+					<div class="text-xs uppercase tracking-widest mb-1 opacity-80">Contact for Corporate Gifting</div>
+					<div class="text-3xl font-bold font-mono tracking-tight mb-1">8800004333</div>
+					<div class="text-xs text-[#FDBA74]">connect@iskconnoida.org</div>
+				</div>
+				
+				<div class="mt-6 flex justify-center items-center gap-4 text-xs text-[#92400E] font-bold">
+					<img src="/prabhupada.webp" class="h-12 rounded-full border-2 border-[#B45309]" />
+					<div class="text-left">
+						<p>Founder-Acharya: H.D.G. A.C. Bhaktivedanta Swami Prabhupada</p>
+						<p>© 2025 ISKCON Noida</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

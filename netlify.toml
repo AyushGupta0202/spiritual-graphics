@@ -1,5 +1,0 @@
-[build]
-  base = "gita-proposal"
-  publish = "dist"
-  command = "npm run build"
-
